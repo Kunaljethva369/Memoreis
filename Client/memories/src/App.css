@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body {
+    position: relative;
+    background: url('../public/Assests/bg.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+} */
+body:before {
+    content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+	display:block;
+	background:url('../public/Assests/bg.webp') no-repeat 50% 50%;
+	background-size:cover;
+}
+
+#root{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+}

@@ -1,0 +1,121 @@
+.login-box.active {
+    display: block;
+}
+
+.login-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(2, 2, 2, 0.9);
+    box-sizing: border-box;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .9);
+    border-radius: 10px;
+    display: none;
+    z-index: 9;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #ffeba7;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: rgb(248, 237, 246);
+    font-size: 12px;
+}
+
+.login-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffeba7;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border: none;
+}
+
+.login-box button:hover {
+    background: #ffeba7;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ffeba7,
+        0 0 25px #ffeba7,
+        0 0 50px #ffeba7,
+        0 0 100px #ffeba7;
+}
+
+.login-box button span {
+    position: absolute;
+    display: block;
+}
+
+.chooseFile {
+    margin-bottom: 0.5rem;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    color: white;
+}
+
+.cross {
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.cross:hover {
+    color: black;
+}
+
+.PopUp {
+    padding-top: 2.5rem;
+}
+
+@media only screen and (max-width:567px) {
+    .login-box {
+        width: 330px;
+    }
+}
