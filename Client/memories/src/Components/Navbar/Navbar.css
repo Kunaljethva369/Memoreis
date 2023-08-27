@@ -44,15 +44,22 @@
 
 @media only screen and (max-width:991px) {
     .navbar-brand {
-        width: 30%;
+        width: 100px;
     }
-
+    .navbar{
+        flex-wrap: nowrap;
+    }
     .navbar-brand img {
         width: 50%;
     }
-
+    .navlinks{
+        text-align: center;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
     .nav-urls {
         font-size: 1rem;
-        margin-right: 1.5rem;
+        margin-right: .8rem;
     }
 }

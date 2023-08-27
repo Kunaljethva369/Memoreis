@@ -23,7 +23,7 @@ function Navbar(setPopup) {
                 <div className='navlinks'>
                     <a className="nav-urls" onClick={setPopup.props.openPopUp} >Add Recipe</a>
                     {
-                        setPopup.props.logedIn ? <a className="nav-urls" onClick={handleLogout}>Logout</a> : <a className="nav-urls" onClick={() => { setPopup.props.setLoginPopUp(true) }}>Login / SignUp</a>
+                        setPopup.props.logedIn ? <a className="nav-urls" onClick={handleLogout}>Logout</a> : <a className="nav-urls" onClick={() => { setPopup.props.setLoginPopUp(true) }}>Login/SignUp</a>
                     }
                 </div>
             </nav>
