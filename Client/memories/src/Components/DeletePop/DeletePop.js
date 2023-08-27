@@ -23,6 +23,7 @@ function DeletePop({ props }) {
         });
         props.setLoader(false);
         props.setDeletePop(false);
+        document.body.style.overflowY = 'scroll';
         const token = localStorage.getItem('token');
         const userEmail = JSON.parse(token).emailid;
         const recipeId = deletedMemories[0].id;
@@ -44,7 +45,10 @@ function DeletePop({ props }) {
                         <h3>Are you sure, you want delete Recipe ?</h3>
                         <div>
                             <button className="card-link del" onClick={() => deleteMeomires()}>Yes</button>
-                            <button className="card-link" onClick={() => { props.setDeletePop(false) }}>No</button>
+                            <button className="card-link" onClick={() => {
+                                props.setDeletePop(false)
+                                document.body.style.overflowY = 'scroll';
+                            }}>No</button>
                         </div>
                     </div>
                 </div>

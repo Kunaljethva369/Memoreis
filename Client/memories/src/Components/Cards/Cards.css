@@ -70,9 +70,11 @@
 
 .nomemories {
     color: white;
-    position: absolute;
-    top: 32%;
-    left: 35%;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
 }
 
 .card-link {
@@ -89,7 +91,7 @@
 }
 
 .card-link:hover {
-    background: #ffeba7;
+    background: #0f9a0f;
     color: #011558;
     border-radius: 5px;
 }

@@ -5,6 +5,7 @@ function InnerCards(data) {
     const deleteMemoreis = (el) => {
         data.sendToInnerData.props.setDeletePop(true);
         data.sendToInnerData.props.setDeletedElement(el);
+        document.body.style.overflowY = 'hidden';
     }
 
 
